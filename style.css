@@ -15,7 +15,8 @@ body {
   display: flex;
   font-size: 18px;
   width: 80%;
-  margin-bottom: 30px;
+  height: auto;
+  min-height: 400px;
 }
 
 #worker,
@@ -24,6 +25,43 @@ body {
   padding: 40px;
   width: 50%;
   text-align: center;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  font-size: 18px;
+  width: 80%;
+  min-width: 100px;
+}
+
+#worker,
+#company {
+  font-size: 36px;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+#contentName {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+#workerTotal,
+#companyTotal {
+  align-self: center;
 }
 
 #startButton {
