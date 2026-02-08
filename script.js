@@ -2,7 +2,6 @@ const time = document.getElementById("timer");
 const startButton = document.getElementById("startButton");
 
 const workerTotalCost = document.getElementById("workerTotal");
-const companyTotalCost = document.getElementById("companyTotal");
 
 let startTime = 0;
 let totalTime = 0;
@@ -22,7 +21,6 @@ function updateTotals(ms) {
   const secs = Math.floor(ms / 1000);
 
   workerTotalCost.textContent = String(secs * 10);
-  companyTotalCost.textContent = String(secs * 20);
 }
 
 startButton.addEventListener("click", () => {
