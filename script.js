@@ -20,7 +20,7 @@ function formatTime(ms) {
 function updateTotals(ms) {
   const secs = Math.floor(ms / 1000);
 
-  workerTotalCost.textContent = String(secs * 10);
+  workerTotalCost.textContent = `$ ${String(secs * 10)}`;
 }
 
 startButton.addEventListener("click", () => {
